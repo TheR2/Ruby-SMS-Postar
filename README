@@ -1,0 +1,41 @@
+
+Priznam, da me je primera v PHP-ju ki ga dobite na Mobitelovi spletni
+strani malo strah, pa čeprav sem vse skupaj uspešno uporabljal več kot
+eno leto. Zato sem vse skupaj napisal v programske jeziku Ruby, ki je
+enostavnejši za instalacijo, enostavnejši za razumevanje kode predvsem pa
+100% prenosljiv med različnimi platformami.
+
+Preizkušeno deluje iz Windows Viste, XP in iz Ubuntu Linuxa, verjetno pa
+tudi iz vseh ostalih Windows okolij, vseh linux-ih unix-ih in vseh ostalih
+platformah, za katere dobite Ruby interpreter in podporo za OpenSSL.
+Več o Ruby-u si preberite na http://www.ruby-lang.org.
+
+
+Instalacija Ruby-ja.
+
+Windows: Instalacijsko datoteko, ki vsebuje vse potrebno, je najbolje
+prenesti iz http://rubyinstaller.org/ ali pa direktno iz:
+http://rubyforge.org/frs/download.php/62213/rubyinstaller-1.9.1-p243-preview2.exe
+1.9.x verzije so že zadosti stabilne. Lahko pa uporabite tudi stabilno 1.8.6 verzijo
+
+Ubuntu Linux:
+apt-get install ruby
+
+
+Uporaba:
+V premenljivki msg popravite vsebino in vpišite vsebino vašega sporočila. Po
+možnosti brez čšž, ker so rezultati v nasprotnem primeru lahko nepričakovani.
+
+Podatke o številkah kamor želite poslati sporočilo zapišite v tekstno datoteko.
+V vsako vrstico eno številko.
+
+Prenos sporočil poženete: ruby posljiSMS.rb ime_datoteke_z_naslovi
+
+Program obdela tudi odgovor strežnika in ga shrani v XML datoteko. Ime
+datotke je določeno z ID-jem sporočila.
+
+Ne pozabite popraviti tudi takoj spodaj navedenega imena datoteke s
+certifikatom in gesla za privatni ključ. (CERT_FILE in CERT_PASS)
+
+V datoteko določeno s spremenljivko BLACK_FILE lahko vpišete spisek
+številk za katere ne želite, da se pošiljajo sporočila.
