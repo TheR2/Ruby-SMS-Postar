@@ -72,7 +72,7 @@ if msg.size > 160
 end
 ###################################################################
 # Preberi datoteko tistih, ki ne želijo prejemati SMS-jev
-$blacklist = beri_blacklist()
+$blacklist = beri_blacklist(BLACK_FILE)
 $napakic, $poslanih, $blacklisted = 0, 0, 0
 # v array numbers bo šel spisek številk
 numbers = [] 
